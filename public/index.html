@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Bot Dashboard</title>
+  <link href="/css/style.css" rel="stylesheet">
+  <link rel="icon" href="/assets/icons/favicon.ico">
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+  <div id="app" class="flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 py-4 px-6 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold text-blue-400">Nexus</a>
+        <div id="auth-buttons"></div>
+      </div>
+    </nav>
 
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+      <div id="content"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4 px-6">
+      <div class="container mx-auto text-center text-gray-400">
+        &copy; 2023 Nexus Bot. All rights reserved.
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
